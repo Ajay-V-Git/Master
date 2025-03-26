@@ -56,7 +56,7 @@ $Parameter1= "-accepteula -i sysmonconfig-export.xml"
 $Parameter2= "-accepteula -c sysmonconfig-export.xml"
 
 $sys1 = Start-Process sysmon.exe -ArgumentList $Parameter1 -PassThru -ErrorAction Stop
-$sys2 = Start-Process sysmon.exe -ArgumentList $Parameter1 -PassThru -ErrorAction Stop
+$sys2 = Start-Process sysmon.exe -ArgumentList $Parameter2 -PassThru -ErrorAction Stop
 
 #.\sysmon.exe 
 #.\sysmon.exe -accepteula -c sysmonconfig-export.xml
