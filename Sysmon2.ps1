@@ -55,8 +55,8 @@ Write-Host "Installing Sysmon..."
 $Parameter1= "-accepteula -i sysmonconfig-export.xml"
 $Parameter2= "-accepteula -c sysmonconfig-export.xml"
 
-Start-Process sysmon.exe -ArgumentList $Parameter1 -PassThru -ErrorAction Stop
-Start-Process sysmon.exe -ArgumentList $Parameter1 -PassThru -ErrorAction Stop
+$sys1 = Start-Process sysmon.exe -ArgumentList $Parameter1 -PassThru -ErrorAction Stop
+$sys2 = Start-Process sysmon.exe -ArgumentList $Parameter1 -PassThru -ErrorAction Stop
 
 #.\sysmon.exe 
 #.\sysmon.exe -accepteula -c sysmonconfig-export.xml
